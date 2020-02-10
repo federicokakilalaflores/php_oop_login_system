@@ -1,0 +1,25 @@
+:root{
+    --default-pd: 1rem;
+    --default-br: 7px;
+}
+
+div.login-box{
+    box-shadow: 0 6px 22px 6px rgba(0, 0, 0, 0.19);
+    padding: 3rem var(--default-pd);
+    border-radius: var(--default-br);
+    border-top: 7px solid rgb(243, 171, 78); 
+}
+
+div.login-box > .login-img{
+    width: 112px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.19);;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+div.login-form-container{ 
+    margin-top: 15vh; 
+} 
+

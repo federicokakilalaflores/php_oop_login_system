@@ -1,0 +1,7 @@
+:root{
+    --mt-default: 18vh;
+}
+
+.mt-default{
+    margin-top: var(--mt-default);
+}

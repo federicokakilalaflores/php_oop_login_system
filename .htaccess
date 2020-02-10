@@ -1,0 +1,15 @@
+#Fix Rewrite
+Options -Multiviews
+
+# Mod Rewrite
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z_-]+)\/?$ $1.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^admin/([a-z_-]+)\/?$ admin/$1.php [NC,L]
+
